@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Richard | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <div class="logo-glitch" data-text="R">R</div>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Início</a> 
+            <a href="#about">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="glitch-container">
+                <h1 class="glitch" data-text="Rafael Richard">Rafael Richard</h1>
+            </div>
+            <div class="hero-subtitle">
+                <div class="typing-text"></div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Arrasta para baixo</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header reveal">
+                <h2>Sobre Mim</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper">
+                        <img src="imagens/eu.jpeg" alt="Rafael Richard">
+                    </div>
+                </div>
+                
+                <div class="about-content reveal-right">
+                    <div class="about-text">
+                        <p class="highlight">Desenvolvedor Full Stack em formação, 21 anos</p>
+                        <p>Atualmente cursando Análise e Desenvolvimento de Sistemas no Centro Católico Salesiano Auxilium, com formação técnica pelo Centro Paula Souza - Etec Araçatuba.</p>
+                    </div>
+                    
+                    <div class="experience-cards">
+                        <div class="exp-card">
+                            <span class="exp-number" data-count="2">0</span>
+                            <span class="exp-label">Anos de<br>Estudo</span>
+                        </div>
+                        <div class="exp-card">
+                            <span class="exp-number" data-count="5">0</span>
+                            <span class="exp-label">Projetos<br>Realizados</span>
+                        </div>
+                        <div class="exp-card">
+                            <span class="exp-number" data-count="7">0</span>
+                            <span class="exp-label">Tecnologias<br>Dominadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p>Centro Católico Salesiano Auxilium</p>
+                        <span class="date">2023 - Presente</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Técnico em Desenvolvimento</h3>
+                        <p>Centro Paula Souza - Etec Araçatuba</p>
+                        <span class="date">2021 - 2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header reveal">
+                <h2>Minhas Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category reveal-left">
+                    <h3>Desenvolvimento</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML/CSS">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="PHP">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="C#">
+                            <div class="skill-info">
+                                <span class="skill-name">C# (Em formação)</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-right">
+                    <h3>Ferramentas</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-database"></i>
+                            <span>SAP CX</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Protheus ERP TOTVS</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Terminal</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                    <div class="skills-description">
+                        <p>Sou um desenvolvedor proativo e dedicado, sempre em busca de novos conhecimentos e desafios. 
+                           Tenho facilidade em trabalhar em equipe e me adaptar a novos ambientes e tecnologias. 
+                           Minha dedicação é 100% em cada projeto, buscando sempre os melhores resultados.</p>
+                        <p>Atualmente, estou focado em aprimorar minhas habilidades em desenvolvimento web e mobile, 
+                           com especial interesse em tecnologias modernas como React e C#.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header reveal">
+                <h2>Contato</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>Vamos Conversar!</h3>
+                        <p>Estou disponível para oportunidades de projetos como freelancer.</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rafael-richard-a64881229/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/rafael.richard_/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://wa.me/5518996949369" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
