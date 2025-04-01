@@ -57,6 +57,123 @@ body {
     background: rgba(18, 18, 18, 0.8);
 }
 
+.nav-logo .logo-glitch {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Exemplo de cor de hover */
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .nav-logo .logo-glitch {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(18, 18, 18, 0.9);
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        z-index: 99;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-btn__burger {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        position: relative;
+    }
+
+    .menu-btn__burger::after,
+    .menu-btn__burger::before {
+        content: "";
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+    }
+
+    .menu-btn__burger::before {
+        top: -8px;
+    }
+
+    .menu-btn__burger::after {
+        top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo .logo-glitch {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6347; /* Cor de fundo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #ff4500;
+}
+
 .logo-glitch {
     font-size: 2rem;
     font-weight: 700;
@@ -216,6 +333,7 @@ body {
     transform: scale(1.05);
 }
 
+/* General Styles */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -314,6 +432,86 @@ body {
     height: 200px;
     object-fit: cover;
     margin-bottom: 1rem;
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .logo-glitch {
+        font-size: 1.5rem;
+    }
+
+    .hero .glitch {
+        font-size: 3rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .split-content {
+        grid-template-columns: 1fr;
+    }
+
+    .designer-side h2, .coder-side h2 {
+        font-size: 2rem;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: 300px;
+    }
+
+    .latest-work h3 {
+        font-size: 1rem;
+    }
+
+    .work-item img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .logo-glitch {
+        font-size: 1.2rem;
+    }
+
+    .hero .glitch {
+        font-size: 2.5rem;
+    }
+
+    .section-header {
+        margin-bottom: 20px;
+    }
+
+    .about-container {
+        padding: 20px;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: 250px;
+    }
+
+    .latest-work h3 {
+        font-size: 0.9rem;
+    }
+
+    .work-item img {
+        height: 120px;
+    }
 }
 
 footer {
@@ -448,7 +646,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
 /* Estilos para a seção Sobre Mim */
 .about {
     padding: 100px 0;
@@ -508,6 +705,25 @@ footer {
     border-left: 4px solid var(--accent);
     padding-left: 20px;
 }
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .highlight-text {
+        font-size: 1.2rem; /* Tamanho da fonte reduzido */
+        margin-bottom: 20px; /* Menos espaçamento inferior */
+        padding-left: 15px; /* Menos preenchimento à esquerda */
+    }
+}
+
+/* Ajuste para telas muito pequenas (como celulares em retrato) */
+@media (max-width: 480px) {
+    .highlight-text {
+        font-size: 1rem; /* Fonte menor para telas muito pequenas */
+        margin-bottom: 15px; /* Reduzindo o espaçamento */
+        padding-left: 10px; /* Menos preenchimento à esquerda */
+    }
+}
+
 
 .about-text p {
     margin-bottom: 25px;
@@ -571,7 +787,11 @@ footer {
 
 .timeline {
     position: relative;
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
 }
 
 .timeline::before {
@@ -590,6 +810,9 @@ footer {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
 }
 
 .timeline-item.visible {
@@ -637,21 +860,60 @@ footer {
     margin-top: 10px;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .about-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 coluna em vez de 2 em dispositivos menores */
+        gap: 30px;
     }
 
     .stats {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em dispositivos médios */
+    }
+
+    .stat-item {
+        padding: 15px; /* Menos padding para dispositivos móveis */
+    }
+
+    .experience h3 {
+        font-size: 1.5rem; /* Reduzir o tamanho da fonte em telas menores */
+    }
+
+    .timeline-content {
+        padding: 20px; /* Menos padding nas timelines em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 coluna para dispositivos pequenos */
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem; /* Tamanho de fonte menor */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Menor tamanho de fonte para parágrafos */
+    }
+
+    .highlight-text {
+        font-size: 1.2rem; /* Reduzir tamanho de fonte */
+    }
+
+    .stat-number {
+        font-size: 2rem; /* Menor tamanho para número da estatística */
+    }
+
+    .timeline-content h4 {
+        font-size: 1rem; /* Reduzir o título da timeline */
+    }
+
+    .date {
+        font-size: 0.8rem; /* Tamanho menor para a data */
     }
 }
+
 
 /* Ajuste nas skills */
 .skill-category h3 {
@@ -677,6 +939,8 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 100%; /* Garante que o cartão se ajuste ao tamanho da tela */
+    box-sizing: border-box; /* Certifica-se de que o padding é levado em consideração no tamanho total */
 }
 
 .exp-label {
@@ -688,6 +952,18 @@ footer {
     font-weight: bold;
     color: #000000;
 }
+
+/* Media query para telas menores que 600px */
+@media (max-width: 600px) {
+    .exp-card {
+        padding: 15px; /* Reduz o padding em telas menores */
+    }
+
+    .exp-number {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte em telas menores */
+    }
+}
+
 
 /* Skills Section */
 .skills {
@@ -1011,16 +1287,35 @@ footer {
     border-left: 4px solid var(--primary);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Para permitir que os itens se movam para a linha seguinte em telas pequenas */
 }
 
 .skills-description p {
     color: var(--light);
     margin-bottom: 15px;
     line-height: 1.6;
+    flex: 1 1 45%; /* Garante que cada item ocupe até 45% da largura disponível */
 }
 
 .skills-description p:last-child {
     margin-bottom: 0;
+}
+
+/* Media Query para telas pequenas */
+@media (max-width: 768px) {
+    .skills-description {
+        padding: 15px; /* Ajustando o padding para telas menores */
+        flex-direction: column; /* Coloca os elementos em coluna */
+    }
+
+    .skills-description p {
+        flex: 1 1 100%; /* Os parágrafos ocupam toda a largura disponível */
+        margin-bottom: 10px; /* Diminui o espaçamento entre os itens */
+    }
+
+    .skills-description p:last-child {
+        margin-bottom: 0; /* Sem margem no último item */
+    }
 }
 
 /* Ajustes na seção de contato */

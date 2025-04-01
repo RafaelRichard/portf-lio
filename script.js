@@ -224,6 +224,25 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         this.reset();
     }, 3000);
 });
+// Função para mostrar ou esconder o botão conforme a rolagem da página
+window.onscroll = function() {
+    let scrollToTopBtn = document.querySelector('.scroll-to-top');
+    
+    // Se a rolagem for maior que 300px, mostra o botão
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+// Função para rolar até o topo
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Rolar suavemente
+    });
+}
 
 // Adicionar animação aos links sociais
 document.querySelectorAll('.social-link').forEach(link => {
