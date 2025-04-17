@@ -1102,6 +1102,7 @@ footer {
     border: 1px solid transparent;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease, background 0.6s ease-in-out;
 }
 
 .social-link::before {
@@ -1137,6 +1138,37 @@ footer {
 
 .social-link:hover i {
     animation: bounce 0.5s ease infinite;
+}
+
+.social-link.linkedin:hover {
+    background: radial-gradient(circle at 30% 107%, #000e5a 0%, #001aaf 45%, #000e5a 60%, #0022e4 90%);
+    box-shadow: 0 0 10px #0077B5;
+    color: white;
+}
+
+.social-link.github:hover {
+    background: radial-gradient(circle at 30% 107%, #000000 0%, #474747 45%, #b3b3b3 60%, #c2c2c2 90%);
+    box-shadow: 0 0 10px #666;
+    color: white;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 0 10px #E1306C;
+    color: white;
+}
+
+
+.social-link.whatsapp:hover {
+    background: radial-gradient(circle at 30% 107%, #006605 0%, #009607 45%, #00c50a 60%, #00d80b 90%);
+    box-shadow: 0 0 10px #25D366;
+    color: white;
+}
+
+.social-link.gmail:hover {
+    background: radial-gradient(circle at 30% 107%, #850400 0%, #ca0700 45%, #d60700 60%, #ff0800 90%);
+    box-shadow: 0 0 10px #D44638;
+    color: white;
 }
 
 /* Formulário de Contato */
