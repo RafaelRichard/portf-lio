@@ -1,232 +1,413 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Richard | Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de Rafael Almeida, Desenvolvedor Full Stack na Forsoft, com experiência em .NET, Angular, C#, SQL Server, ERP, SAP CX e Protheus TOTVS.">
+    <title>Rafael Almeida | Desenvolvedor Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <div class="ambient-bg" aria-hidden="true">
+        <span class="grid-layer"></span>
+        <span class="light-beam light-beam-a"></span>
+        <span class="light-beam light-beam-b"></span>
+    </div>
 
-    <nav class="navbar">
-        <div class="nav-logo">
-            <div class="logo-glitch" data-text="R">R</div>
-        </div>
-        <div class="nav-links">
-            <a href="#home" class="active">Início</a> 
-            <a href="#about">Sobre</a>
-            <a href="#skills">Skills</a>
-            <a href="https://github.com/RafaelRichard">Repositório</a>
-            <a href="#contact">Contato</a>
-        </div>
-        <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
-        </div>
-    </nav>
-    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a class="brand" href="#home" aria-label="Ir para o início">RA</a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#expertise">Atuação</a>
+                <a href="#projects">Projetos</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contato</a>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <section id="home" class="hero">
-            <div class="glitch-container">
-                <h1 class="glitch" data-text="Rafael Richard">Rafael Richard</h1>
+        <section id="home" class="hero section-shell">
+            <div class="hero-content reveal">
+                <span class="eyebrow">Desenvolvedor Full Stack</span>
+                <h1>Rafael Almeida</h1>
+                <p class="hero-text">
+                    Desenvolvedor Full Stack com experiência em sistemas ERP, atuando no frontend, backend e banco de dados para soluções corporativas.
+                </p>
+                <div class="hero-stack" aria-label="Tecnologias principais">
+                    <span>.NET</span>
+                    <span>Angular</span>
+                    <span>SQL Server</span>
+                    <span>C#</span>
+                    <span>SVN</span>
+                </div>
+                <div class="hero-metrics" aria-label="Resumo profissional">
+                    <article>
+                        <strong>Forsoft</strong>
+                        <span>Desenvolvedor Full Stack</span>
+                    </article>
+                    <article>
+                        <strong>ERP</strong>
+                        <span>gestão empresarial</span>
+                    </article>
+                    <article>
+                        <strong>Suporte</strong>
+                        <span>SAP CX e TOTVS</span>
+                    </article>
+                </div>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">
+                        <i class="fa-solid fa-code"></i>
+                        Ver projetos
+                    </a>
+                    <a class="btn btn-secondary" href="https://www.linkedin.com/in/rafael-richard-a64881229/" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        Ver LinkedIn
+                    </a>
+                    <a class="btn btn-secondary" href="https://github.com/RafaelRichard" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        Ver GitHub
+                    </a>
+                </div>
             </div>
-            <div class="hero-subtitle">
-                <div class="typing-text"></div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse"></div>
-                <p>Arrasta para baixo</p>
-            </div>
+            <aside class="profile-panel reveal">
+                <img src="imagens/FotoPerfil.png" alt="Foto de Rafael Almeida">
+                <div class="profile-info">
+                    <div class="profile-card">
+                        <strong>Foco atual</strong>
+                        <span>Desenvolvimento e manutenção de sistemas ERP atuando com frontend, backend, SQL Server e boas práticas de organização de código.</span>
+                    </div>
+                </div>
+            </aside>
         </section>
 
-        <section id="about" class="about">
-            <div class="section-header reveal">
-                <h2>Sobre Mim</h2>
-                <div class="section-line"></div>
+        <section id="about" class="about section-shell">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Sobre mim</span>
+                <h2>Desenvolvedor com vivência em ERP, suporte técnico e sistemas corporativos.</h2>
             </div>
-            
-            <div class="about-container">
-                <div class="about-image reveal-left">
-                    <div class="image-wrapper">
-                        <img src="imagens/eu.jpg" alt="Rafael Richard">
-                    </div>
+            <div class="about-grid">
+                <div class="about-copy reveal">
+                    <p>
+                        Sou formado em Análise e Desenvolvimento de Sistemas e atualmente atuo como Desenvolvedor Full Stack na Forsoft, participando da implementação de novas funcionalidades, manutenção de sistemas existentes e construção de soluções organizadas para gestão empresarial.
+                    </p>
+                    <p>
+                        Também desenvolvi experiência em suporte técnico na CentralAr.com, trabalhando com SAP CX, Protheus ERP TOTVS, infraestrutura e atendimento aos usuários. Essa trajetória me deu uma visão prática sobre desenvolvimento, operação, resolução de problemas e necessidades reais de negócio.
+                    </p>
                 </div>
-                    
-                    <div class="experience-cards">  
-                        <div class="exp-card">
-                            <span class="exp-number" data-count="2">0</span>
-                            <span class="exp-label">Anos de<br>Estudo</span>
-                        </div>
-                        <div class="exp-card">
-                            <span class="exp-number" data-count="5">0</span>
-                            <span class="exp-label">Projetos<br>Realizados</span>
-                        </div>
-                        <div class="exp-card">
-                            <span class="exp-number" data-count="7">0</span>
-                            <span class="exp-label">Tecnologias<br>Dominadas</span>
-                        </div>
-                    </div>
+                <div class="stats-grid reveal">
+                    <article>
+                        <strong data-count="2">0</strong>
+                        <span>áreas de atuação</span>
+                    </article>
+                    <article>
+                        <strong data-count="3">0</strong>
+                        <span>projetos em destaque</span>
+                    </article>
+                    <article>
+                        <strong data-count="2">0</strong>
+                        <span>ERPs no histórico</span>
+                    </article>
                 </div>
             </div>
-
             <div class="timeline reveal">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Análise e Desenvolvimento de Sistemas</h3>
-                        <p>Centro Católico Salesiano Auxilium</p>
-                        <span class="date">2023 - Presente</span>
-                    </div>
+                <article>
+                    <span>Atual</span>
+                    <h3>Desenvolvedor Full Stack</h3>
+                    <p>Forsoft - frontend com Angular, backend em .NET/C#, SQL Server, SVN e sistemas ERP</p>
+                </article>
+                <article>
+                    <span>Experiência anterior</span>
+                    <h3>Suporte técnico e sistemas corporativos</h3>
+                    <p>CentralAr.com - SAP CX, Protheus ERP TOTVS, infraestrutura e atendimento técnico</p>
+                </article>
+                <article>
+                    <span>Formado</span>
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p>Centro Católico Salesiano Auxilium</p>
+                </article>
+                <article>
+                    <span>2021 - 2022</span>
+                    <h3>Técnico em Desenvolvimento</h3>
+                    <p>Centro Paula Souza - Etec Araçatuba</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="expertise" class="expertise section-shell">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Atuação</span>
+                <h2>O que eu entrego no dia a dia.</h2>
+                <p>Minha experiência combina desenvolvimento web, visão de sistemas ERP e atendimento técnico, o que ajuda a construir soluções mais úteis para usuários e equipes.</p>
+            </div>
+            <div class="value-grid">
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>Sistemas ERP</h3>
+                    <p>Atuação com manutenção e evolução de sistemas de gestão empresarial, considerando regras de negócio, processos e uso real.</p>
+                </article>
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-display"></i>
+                    <h3>Interfaces web</h3>
+                    <p>Construção de telas organizadas, responsivas e objetivas usando Angular, React, TypeScript, HTML, CSS e JavaScript.</p>
+                </article>
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-plug-circle-bolt"></i>
+                    <h3>APIs e integrações</h3>
+                    <p>Experiência com backend, banco de dados, autenticação, consumo de APIs e integração entre camadas do sistema.</p>
+                </article>
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Suporte com visão técnica</h3>
+                    <p>Vivência com SAP CX, Protheus TOTVS, infraestrutura e atendimento, trazendo contexto prático para resolver problemas.</p>
+                </article>
+            </div>
+            <div class="experience-highlight reveal">
+                <div>
+                    <span>Experiência atual</span>
+                    <h3>Forsoft | Desenvolvedor Full Stack</h3>
+                    <p>Desenvolvimento e manutenção de sistemas ERP atuando no frontend com Angular, backend em .NET/C#, consultas e rotinas em SQL Server e versionamento com SVN.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Técnico em Desenvolvimento</h3>
-                        <p>Centro Paula Souza - Etec Araçatuba</p>
-                        <span class="date">2021 - 2022</span>
-                    </div>
+                <div class="experience-tags" aria-label="Tecnologias usadas na experiência atual">
+                    <span>.NET</span>
+                    <span>Angular</span>
+                    <span>C#</span>
+                    <span>SQL Server</span>
+                    <span>SVN</span>
+                    <span>ERP</span>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills">
-            <div class="section-header reveal">
-                <h2>Minhas Habilidades</h2>
-                <div class="section-line"></div>
+        <section id="projects" class="projects section-shell">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Projetos</span>
+                <h2>Projetos que mostram minha evolução técnica.</h2>
+                <p>Seleção inicial com projetos acadêmicos, estudos web e um CRM SaaS em desenvolvimento local. Depois podemos adicionar prints reais e demos.</p>
             </div>
+            <div class="project-grid">
+                <article class="project-card featured reveal">
+                    <div class="project-preview portfolio-preview">
+                        <img class="project-screenshot" src="imagens/projects/portfolio-profissional.png" alt="Tela inicial do portfólio profissional">
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>Portfólio profissional</h3>
+                        <p>
+                            Site pessoal redesenhado para apresentar experiência profissional, formação, habilidades, trajetória em sistemas corporativos e projetos com uma interface moderna e responsiva.
+                        </p>
+                        <ul>
+                            <li>Layout responsivo para celular e desktop.</li>
+                            <li>Seção de projetos pronta para prints e estudos de caso.</li>
+                            <li>Texto revisado e navegação mais clara.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/RafaelRichard/portf-lio" target="_blank" rel="noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="skills-container">
-                <div class="skill-category reveal-left">
+                <article class="project-card reveal">
+                    <div class="project-preview placeholder-preview">
+                        <img class="project-screenshot" src="imagens/projects/desabafe-tcc.png" alt="Tela inicial do projeto DesabafeTCC">
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TCC</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <h3>DesabafeTCC</h3>
+                        <p>
+                            Plataforma web desenvolvida como TCC para conectar pessoas a apoio psicológico e psiquiátrico, com interface de agendamento, cadastro e navegação orientada à experiência do usuário.
+                        </p>
+                        <ul>
+                            <li>Frontend em Next.js, React e TypeScript.</li>
+                            <li>Uso de Tailwind, componentes modernos e layout responsivo.</li>
+                            <li>Backend Node/Express para suporte às funcionalidades do sistema.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/RafaelRichard/DesabafeTCC" target="_blank" rel="noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-preview placeholder-preview alt">
+                        <img class="project-screenshot" src="imagens/projects/saude-mental.png" alt="Tela inicial do projeto SaúdeMental">
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Thymeleaf</span>
+                            <span>Bootstrap</span>
+                            <span>Chart.js</span>
+                            <span>Saúde mental</span>
+                        </div>
+                        <h3>SaúdeMental</h3>
+                        <p>
+                            Aplicação Java com Spring Boot para acompanhamento de saúde mental, com páginas web, CRUDs, registros diários, questionários de humor e dashboard analítico.
+                        </p>
+                        <ul>
+                            <li>Backend em Java 17, Spring Boot, JPA/Hibernate e H2 Database.</li>
+                            <li>Views com Thymeleaf, Bootstrap e JavaScript.</li>
+                            <li>Dashboard com gráficos Chart.js, estatísticas e análise de evolução.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/RafaelRichard/SaudeMental" target="_blank" rel="noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                Repositório
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-preview placeholder-preview crm-preview">
+                        <img class="project-screenshot" src="imagens/projects/crm-saas.png" alt="Tela de login do CRM SaaS">
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                        <h3>CRM SaaS Multi-tenant</h3>
+                        <p>
+                            Sistema CRM local em desenvolvimento para pequenas empresas, com arquitetura SaaS multi-tenant, backend em Django REST Framework e frontend em React com TypeScript.
+                        </p>
+                        <ul>
+                            <li>Isolamento de empresas por schema no PostgreSQL.</li>
+                            <li>API com autenticação JWT, Redis, Celery e documentação OpenAPI.</li>
+                            <li>Frontend com Vite, React Query, Zustand, Tailwind, Recharts e drag-and-drop.</li>
+                        </ul>
+                        <div class="project-links">
+                            <span class="project-link-disabled">
+                                <i class="fa-solid fa-lock"></i>
+                                Projeto local
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-shell">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Skills</span>
+                <h2>Tecnologias, sistemas e ferramentas.</h2>
+            </div>
+            <div class="stack-console reveal" aria-label="Resumo técnico em formato console">
+                <div class="console-topbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <pre><code>const perfilTecnico = {
+  frontend: [".NET + Angular", "React", "TypeScript"],
+  backend: ["C#", "Django REST", "Node/Express"],
+  dados: ["SQL Server", "PostgreSQL", "H2"],
+  sistemas: ["ERP", "SAP CX", "Protheus TOTVS"],
+  workflow: ["SVN", "Git", "GitHub"]
+}</code></pre>
+            </div>
+            <div class="skills-layout">
+                <div class="skill-column reveal">
                     <h3>Desenvolvimento</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-skill="HTML/CSS">
-                            <div class="skill-info">
-                                <span class="skill-name">HTML/CSS</span>
-                                <span class="skill-percentage">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="JavaScript">
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-percentage">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="PHP">
-                            <div class="skill-info">
-                                <span class="skill-name">PHP</span>
-                                <span class="skill-percentage">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="React">
-                            <div class="skill-info">
-                                <span class="skill-name">React</span>
-                                <span class="skill-percentage">60%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="C#">
-                            <div class="skill-info">
-                                <span class="skill-name">C# (Em formação)</span>
-                                <span class="skill-percentage">50%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
+                    <div class="chips">
+                        <span>.NET</span>
+                        <span>Angular</span>
+                        <span>C#</span>
+                        <span>SQL Server</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
                     </div>
                 </div>
-
-                <div class="skill-category reveal-right">
-                    <h3>Ferramentas</h3>
-                    <div class="tools-grid">
-                        <div class="tool-item">
-                            <i class="fas fa-database"></i>
-                            <span>SAP CX</span>
-                        </div>
-                        <div class="tool-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Protheus ERP TOTVS</span>
-                        </div>
-                        <div class="tool-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="tool-item">
-                            <i class="fas fa-code-branch"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="tool-item">
-                            <i class="fas fa-terminal"></i>
-                            <span>Terminal</span>
-                        </div>
-                        <div class="tool-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>VS Code</span>
-                        </div>
-                    </div>
-                    <div class="skills-description">
-                        <p>Sou um desenvolvedor proativo, comprometido e apaixonado por tecnologia, sempre em busca de novos conhecimentos e desafios que impulsionem meu crescimento profissional. 
-                            Tenho facilidade para trabalhar em equipe, adaptar-me a diferentes ambientes e aprender novas tecnologias com rapidez. 
-                            Dedico-me integralmente a cada projeto, focando sempre na entrega de soluções eficientes e de alta qualidade. 
-                            Atualmente, estou concentrado em aprimorar minhas habilidades em desenvolvimento web, 
-                            com ênfase em tecnologias como React,Next, TypeScript, Angular e C#...</p>
+                <div class="skill-column reveal">
+                    <h3>Ferramentas e sistemas</h3>
+                    <div class="tool-list">
+                        <span><i class="fa-solid fa-database"></i> SAP CX</span>
+                        <span><i class="fa-solid fa-gears"></i> Protheus ERP TOTVS</span>
+                        <span><i class="fa-solid fa-server"></i> SQL Server</span>
+                        <span><i class="fa-solid fa-code-branch"></i> SVN</span>
+                        <span><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span><i class="fa-solid fa-code-branch"></i> Git</span>
+                        <span><i class="fa-solid fa-terminal"></i> Terminal</span>
+                        <span><i class="fa-solid fa-laptop-code"></i> VS Code</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact"> 
-            <div class="section-header reveal">
-                <h2>Contato</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-text">
-                        <h3>Vamos Conversar!</h3>
-                        <p>Estou disponível para oportunidades de projetos como freelancer.</p>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/rafael-richard-a64881229/" target="_blank" class="social-link linkedin">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/RafaelRichard" target="_blank" class="social-link github">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.instagram.com/rafael.richard_/" target="_blank" class="social-link instagram">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://wa.me/5518996949369" target="_blank" class="social-link whatsapp">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp</span>
-                        </a>
-                        <a href="mailto:rafaelrichardalmeida@gmail.com" target="_blank" class="social-link gmail">
-                            <i class="fas fa-envelope"></i>
-                            <span>Gmail</span>
-                        </a>
-                    </div>                    
+        <section id="contact" class="contact section-shell">
+            <div class="contact-box reveal">
+                <div>
+                    <span class="eyebrow">Contato</span>
+                    <h2>Vamos conversar sobre tecnologia, projetos ou networking?</h2>
+                    <p>Atualmente trabalho como Desenvolvedor Full Stack na Forsoft e sigo evoluindo em .NET, Angular, C#, SQL Server, integrações e soluções para sistemas corporativos.</p>
+                    <p>Aberto a conexões, networking e troca de ideias sobre tecnologia, ERP e desenvolvimento web.</p>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:rafaelrichardalmeida@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        Gmail
+                    </a>
+                    <a href="https://www.linkedin.com/in/rafael-richard-a64881229/" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/RafaelRichard" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://wa.me/5518996949369" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
+    <button class="scroll-top" type="button" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <button class="audio-toggle" type="button" aria-label="Ativar som ambiente" aria-pressed="false">
+        <i class="fa-solid fa-volume-xmark"></i>
+        <span>Som ambiente</span>
+    </button>
+    <audio id="backgroundAudio" src="assets/audio/intro-the-xx.mp3" preload="metadata" loop></audio>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

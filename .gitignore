@@ -1,0 +1,4 @@
+project-sources/
+*.log
+node_modules/
+.next/
